@@ -36,7 +36,7 @@ class App extends Component {
       age: this.state.updatedAge
     }
 
-    //axios put request is made to the server endpoint we set up, along with the object we just built
+    //axios put request is made to the server endpoint we set up in server/index.js, along with the object we just built
     axios.put('/api/customer_names', bodyToSend).then(customers => {
 
       //state is set with the response that included the updated name, the other values in state are set to an empty string so that they clear out our inputs after we press submit

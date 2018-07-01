@@ -22,7 +22,7 @@ app.get('/api/customer_names', (req, res) => {
 
 app.put('/api/customer_names', (req, res) => {
 
-    //destructure the properties of the object being sent from our axios put request on our front end 
+    //destructure the properties of the object being sent from our axios put request on our front end in App.js
     const { id, name, age } = req.body;
 
     //map over our customers array to see 
